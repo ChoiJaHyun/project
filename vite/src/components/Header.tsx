@@ -1,7 +1,6 @@
 import {
   Button,
   Flex,
-  Image,
   Menu,
   MenuButton,
   MenuItem,
@@ -14,7 +13,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import { JsonRpcSigner } from "ethers";
 import { Contract, ethers } from "ethers";
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import mintAbi from "../lib/mintAbi.json";
 import saleAbi from "../lib/saleAbi.json";
 import {
@@ -34,7 +33,7 @@ const Header: FC<HeaderProps> = ({
   setSaleContract,
 }) => {
   const [account, setAccount] = useState<string | null>(null);
-  const navigate = useNavigate();
+
   const connectWallet = async () => {
     try {
       if (!window.ethereum) {

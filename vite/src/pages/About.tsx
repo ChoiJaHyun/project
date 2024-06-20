@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Flex, Heading, Text, Image, keyframes } from "@chakra-ui/react";
 
 const rotate = keyframes`

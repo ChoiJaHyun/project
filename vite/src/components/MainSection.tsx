@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Box,
   Flex,
@@ -246,8 +246,8 @@ const MainSection = () => {
             {displayedCards.map((index) => (
               <Box
                 key={index}
-                width="100px"
-                height="165px"
+                width="130px"
+                height="215px"
                 bg="white"
                 opacity={0.7}
                 mb={2}
